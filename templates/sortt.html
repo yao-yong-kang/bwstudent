@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排序</title>
+    <link rel="stylesheet" href="../static/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../static/bootstrap-4.5.0-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../static/bootstrap-4.5.0-dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="../static/bootstrap-4.5.0-dist/js/bootstrap.js">
+</head>
+<body>
+<form action="" method="post">
+<input class="btn btn-primary" type="submit" value="python排序" name="python">
+<input class="btn btn-primary" type="submit" value="java排序" name="java">
+<input class="btn btn-primary" type="reset" value="english排序" name="english">
+<input class="btn btn-primary" type="reset" value="总分排序" name="total">
+    </form>
+<table class="table table-striped">
+  <thead>
+<tr>
+        <th scope="col">id</th>
+      <th scope="col">姓名</th>
+      <th scope="col">python</th>
+      <th scope="col">java</th>
+      <th scope="col">English</th>
+      <th scope="col">total</th>
+      <th scope="col">修改</th>
+      <th scope="col">删除</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in a %}
+    <tr>
+      <td>{{ i.g_student.id }}</td>
+      <td>{{ i.g_student.name }}</td>
+      <td>{{ i.python }}</td>
+      <td>{{ i.java }}</td>
+      <td>{{ i.english }}</td>
+      <td>{{ i.total }}</td>
+      <td ><a href="{{ url_for ('dels',id=i.g_student.id) }}">删除</a></td>
+      <td><a href="{{ url_for ('edit',id=i.g_student.id) }}">修改</a></td>
+    </tr>
+   {% endfor %}
+
+</body>
+</html>

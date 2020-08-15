@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../static/bootstrap-4.5.0-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../static/bootstrap-4.5.0-dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="../static/bootstrap-4.5.0-dist/js/bootstrap.js">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap-grid.css">
+</head>
+<body>
+
+<form class="form-inline" method="post">
+{#  <label class="sr-only" for="inlineFormInputName2">Name</label>#}
+{#  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="年龄" name="age">#}
+{#  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="性别" name="sex">#}
+
+  <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+  <div class="input-group mb-2 mr-sm-2">
+    <div class="input-group-prepend">
+      <div class="input-group-text">@</div>
+    </div>
+    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="要修改姓名" name="name">
+  </div>
+    <br>
+  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="python成绩" name="python">
+  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="java成绩" name="java">
+  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="english成绩" name="english">
+
+{#  <div class="form-check mb-2 mr-sm-2">#}
+{#    <input class="form-check-input" type="checkbox" id="inlineFormCheck">#}
+{#    <label class="form-check-label" for="inlineFormCheck">#}
+{#      Remember me#}
+{#    </label>#}
+{#  </div>#}
+
+  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
+{{ err }}
+</body>
+</html>
